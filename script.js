@@ -1,13 +1,13 @@
 document.getElementById('convertButton').addEventListener('click', async () => {
     const videoURL = document.getElementById('videoURL').value;
     if (videoURL) {
-        document.getElementById('result').innerText = 'Conversion en cours...';
+        document.getElementById('result').innerText = 'Redirection en cours...';
 
-        // Redirige l'utilisateur vers le site de conversion
-        const redirectUrl = `https://youtube.techloq.com/?url=${encodeURIComponent(videoURL)}`;
+        // Rediriger l'utilisateur vers le site de conversion
+        const redirectUrl = `https://yt5s.biz/fr/youtube-to-mp4?url=${encodeURIComponent(videoURL)}`;
         
         // Afficher un message de redirection ou un lien
-        document.getElementById('result').innerHTML = `Redirection vers le site de conversion... <a href="${redirectUrl}" target="_blank">Cliquez ici si la page ne s'ouvre pas automatiquement.</a>`;
+        document.getElementById('result').innerHTML = `Si la page ne s'ouvre pas automatiquement, cliquez ici : <a href="${redirectUrl}" target="_blank">Redirection vers la conversion</a>`;
         
         // Ouvrir le site de conversion dans un nouvel onglet
         window.open(redirectUrl, "_blank");
