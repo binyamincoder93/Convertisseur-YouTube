@@ -1,8 +1,8 @@
 document.getElementById('openPopupButton').addEventListener('click', () => {
-    const videoURL = document.getElementById('videoURL').value;
+    const videoURL = document.getElementById('videoURL').value;  // Récupérer l'URL entrée par l'utilisateur
 
     if (videoURL) {
-        // Extraire l'ID vidéo de l'URL
+        // Extraire l'ID vidéo à partir de l'URL
         const videoID = getYouTubeVideoID(videoURL);
         if (videoID) {
             // Ouvrir une popup avec l'iframe de la vidéo YouTube
@@ -47,7 +47,6 @@ function openVideoPopup(videoID) {
 
 // Fonction pour simuler le téléchargement de la vidéo (par exemple via une API de téléchargement)
 function downloadVideo(videoID) {
-    // Remplace ceci par une logique réelle pour obtenir le lien de téléchargement
     const downloadLink = `https://yt5s.biz/fr/youtube-to-mp4?url=https://www.youtube.com/watch?v=${videoID}`;
 
     // Ouvrir un nouvel onglet pour télécharger la vidéo
