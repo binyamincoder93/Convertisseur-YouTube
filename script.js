@@ -4,7 +4,6 @@ function openVideoPopup(videoID) {
     const left = (window.innerWidth / 2) - (width / 2);
     const top = (window.innerHeight / 2) - (height / 2);
 
-    // Ouvrir la fenêtre popup
     const popup = window.open(
         '',
         'Video Popup',
@@ -12,7 +11,6 @@ function openVideoPopup(videoID) {
     );
 
     if (popup) {
-        // Créer le contenu HTML de la popup
         popup.document.write(`
             <html>
             <head>
@@ -27,7 +25,12 @@ function openVideoPopup(videoID) {
                 <h2>Regarder la vidéo</h2>
                 <iframe src="https://www.youtube.com/embed/${videoID}" frameborder="0" allowfullscreen></iframe>
                 <br>
-                <button onclick="window.open('https://yt5s.biz/fr/youtube-to-mp4?url=https://www.youtube.com/watch?v=${videoID}', '_blank')">Télécharger la vidéo</button>
+                <button id="downloadButton">Télécharger la vidéo</button>
+                <script>
+                    document.getElementById('downloadButton').addEventListener('click', function() {
+                        window.open('https://yt5s.biz/fr/youtube-to-mp4?url=https://www.youtube.com/watch?v=${videoID}', '_blank');
+                    });
+                </script>
             </body>
             </html>
         `);
