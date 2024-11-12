@@ -1,32 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
+    background-color: #1f1f1f;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 300;
 }
 
 main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
 }
 
-input, button {
-    padding: 0.5rem;
-    margin: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+section {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 70%;
 }
 
 button {
-    background-color: #333;
-    color: white;
+    padding: 0.8rem;
+    background-color: #6200ea;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #3700b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#result {
+    margin-top: 1.5rem;
+    color: #bb86fc;
+}
+
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
