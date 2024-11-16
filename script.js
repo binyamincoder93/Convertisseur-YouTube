@@ -27,9 +27,9 @@ function openVideoPopup(videoID) {
                 <h2>Regarder la vidéo</h2>
                 <iframe src="https://www.youtube.com/embed/${videoID}" frameborder="0" allowfullscreen></iframe>
                 <br>
-                <a href="https://yt5s.biz/fr/youtube-to-mp4?url=https://www.youtube.com/watch?v=${videoID}" target="_blank">Télécharger la vidéo</a>
+                <a href="https://www.youtube.com/watch?v=${videoID}" target="_blank">Voir sur YouTube</a>
                 <br>
-                <a href="https://www.youtube.com/watch?v=${videoID}" target="_blank">Voir la vidéo sur YouTube</a>
+                <a href="https://yt5s.biz/fr/youtube-to-mp4?url=https://www.youtube.com/watch?v=${videoID}" target="_blank">Télécharger la vidéo</a>
             </body>
             </html>
         `);
