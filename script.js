@@ -17,14 +17,14 @@ function openVideoPopup(videoID) {
                 <title>Visionneuse YouTube</title>
                 <style>
                     body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-                    iframe { width: 100%; height: 60%; border: none; }
+                    iframe { width: 100%; height: 60%; }
+                    button { margin-top: 15px; padding: 10px 20px; font-size: 16px; cursor: pointer; }
                     a { display: inline-block; margin-top: 20px; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; text-decoration: none; border-radius: 5px; }
                     a:hover { background-color: #0056b3; }
                 </style>
             </head>
             <body>
                 <h2>Regarder la vidéo</h2>
-                <!-- Iframe pour voir la vidéo YouTube -->
                 <iframe src="https://www.youtube.com/embed/${videoID}" frameborder="0" allowfullscreen></iframe>
                 <br>
                 <!-- Lien pour télécharger la vidéo -->
