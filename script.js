@@ -19,18 +19,15 @@ function openVideoPopup(videoID) {
                     body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
                     iframe { width: 100%; height: 60%; }
                     button { margin-top: 15px; padding: 10px 20px; font-size: 16px; cursor: pointer; }
+                    a { display: inline-block; margin-top: 10px; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; text-decoration: none; border-radius: 5px; }
+                    a:hover { background-color: #0056b3; }
                 </style>
             </head>
             <body>
                 <h2>Regarder la vidéo</h2>
                 <iframe src="https://www.youtube.com/embed/${videoID}" frameborder="0" allowfullscreen></iframe>
                 <br>
-                <button id="downloadButton">Télécharger la vidéo</button>
-                <script>
-                    document.getElementById('downloadButton').addEventListener('click', function() {
-                        window.open('https://yt5s.biz/fr/youtube-to-mp4?url=https://www.youtube.com/watch?v=${videoID}', '_blank');
-                    });
-                </script>
+                <a href="https://yt5s.biz/fr/youtube-to-mp4?url=https://www.youtube.com/watch?v=${videoID}" target="_blank">Télécharger la vidéo</a>
             </body>
             </html>
         `);
